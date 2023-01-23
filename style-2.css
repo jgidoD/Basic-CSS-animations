@@ -1,0 +1,32 @@
+.square {
+  height: 7em;
+  width: 7em;
+  margin: 10px;
+}
+
+.square:nth-child(1) {
+  background-color: red;
+  animation: animate 1s infinite alternate linear;
+}
+.square:nth-child(2) {
+  background-color: blue;
+  animation: animate 1s infinite alternate ease;
+}
+.square:nth-child(3) {
+  background-color: green;
+  animation: animate 1s infinite alternate ease-in;
+}
+.square:nth-child(4) {
+  background-color: yellow;
+  animation: animate 1s infinite alternate ease-out;
+}
+.square:nth-child(5) {
+  background-color: #301e67;
+  animation: animate 1s infinite alternate ease-in-out;
+}
+
+@keyframes animate {
+  to {
+    transform: translateX(30em) rotate(360deg);
+  }
+}
